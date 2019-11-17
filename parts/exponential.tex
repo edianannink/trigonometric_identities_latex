@@ -1,0 +1,27 @@
+\subsection*{Euler's identity}
+\begin{align*}
+  e^{i\theta } &= \cos{\theta} +i\sin{\theta} & e^{i\pi}+1&= 0 & e^{2\pi i} &= 1\\
+\end{align*}
+
+\subsection*{Trigonometric relations to the complex exponential function}
+\begin{align*}
+  \cos{\theta} &= \frac{e^{i\theta}+e^{-i\theta}}{2}
+  &\sin{\theta} &= \frac{e^{i\theta}-e^{-i\theta}}{2i}
+  &\tan{\theta} &= \frac{\tan{\theta}}{\sin{\theta}} = \frac{e^{i\theta}-e^{-i\theta}}{i(e^{i\theta}+e^{-i\theta})}\\
+\end{align*}
+
+\subsection*{Fourier coefficients}
+\begin{align*}
+  \omega_0 &= \frac{2\pi}{T}
+  &a_0 &= \frac{2}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}} f(t) \,dt
+  &c_0 &= \frac{1}{2}a_0\\
+  a_n &= \frac{2}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)\cos{n\omega_0t} \,dt
+  &b_n &= \frac{2}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)\sin{n\omega_0t} \,dt
+  &c_n &= \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)\,e^{-in\omega_0t} \,dt\\
+\end{align*}
+
+\subsection*{Trigonometric \& complex Fourier series}
+\begin{align*}
+  f(t)_{trig} &= \frac{1}{2}a_0 \,+ \sum_{n=1}^{\infty} a_n\cos{n\omega_0t} + b_n\sin{n\omega_0t}
+  &f(t)_{complex} &= \sum_{n=-\infty}^{\infty} c_n \,e^{in\omega_0t}
+\end{align*}

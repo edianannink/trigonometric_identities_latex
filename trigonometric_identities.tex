@@ -8,13 +8,14 @@
 \usepackage{bm} % Bold math text \bm{x}
 \usepackage{tabu} % Tables with vertical cell padding adjustment
 \usepackage{hyperref} % URLs
+\usepackage{titlesec}
 
 % Page settings
 % ---------------------
 
 \usepackage[top=2cm, bottom=2cm,left=2cm,right=2cm]{geometry} %  Page margins
-\setlength{\parskip}{\baselineskip} % Add space between paragraphs
-\setlength{\intextsep}{20pt plus 2.0pt minus 2.0pt} % Add vertical space before and after tables and figures (http://tex.stackexchange.com/a/26522/101976)
+\setlength{\intextsep}{20pt plus 2.0pt minus 2.0pt} % Add vertical space before and after tables and figures 
+\titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
 \parindent=0cm % Remove the paragraph indent of the first line
 \addtolength{\jot}{2\jot} % Double the line between equations
 \def\arraystretch{1.5} % Increase the vertical table cell margin
@@ -30,7 +31,7 @@
 
 \begin{document}
 
-\section*{Basic trigonometric identities}
+\section*{Trigonometric identities}
 
 \input{parts/angles}
 \input{parts/reciprocal}
@@ -43,8 +44,6 @@
 \input{parts/power_reducing_formulas}
 \input{parts/product_to_sum}
 \input{parts/sum_to_product}
-\input{parts/source}
-
-
+\input{parts/exponential}
 
 \end{document}
